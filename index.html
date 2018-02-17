@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+       <title>Portfollio</title>
+        <link rel="stylesheet" href="Week2.css">
+        
+        <!--- Load Custom fonts from Google Fonts --->
+        <link href="https://fonts.googleapis.com/css?family=Gravitas+One|Titillium+Web:300,400,700,900" rel="stylesheet">  
+        <!--- Load Custom fonts from Google Fonts --->
+        <link href="https://fonts.googleapis.com/css?family=Heebo:100,500,900" rel="stylesheet">
+        <!--- Load Custom fonts from Google Fonts --->
+        <link href="https://fonts.googleapis.com/css?family=Asap:400,600,700" rel="stylesheet">   
+        
+    </head>
+    
+    <body>
+       
+         <div class="topimage">
+            
+            <div class="MainTitle"> Hi, I'm Shiloh. </div>
+            <div class="BtnHolder">
+                
+                <a href="Assignment2.html">
+                    <div class="NavBtn">Assignment 2</div>
+                </a>
+                
+                <a href="Assignment3.html">
+                    <div class="NavBtn">Assignment 3</div>
+                </a>
+                
+                <a href="Assignment4.html">
+                    <div class="NavBtn">Assignment 4</div>
+                </a>
+                
+                <a href="finalAssignment.html">
+                    <div class="NavBtn">Final Assignment</div>
+                </a>
+             </div>
+        </div>
+        
+        <!--- 
+                The container for all of the portfollio images is below \/ 
+                Code was refrenced from w3 Schools 
+
+                https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp
+        
+        --->
+      
+        <div class="container">
+            <div class="row">
+                <!--- The four coloumns that make up the grid -->
+                <div class="column">
+                    <img src="images/20170727_205944_Film1.jpg">
+                    <img src="images/20170729_155537.jpg">
+                    <img src="images/20170823_161119_Film4.jpg">
+
+                </div>
+                <div class="column">
+                    <img src="images/20170806_143810.jpg">
+                    <img src="images/20170806_200908_HDR.jpg">
+                    <img src="images/bike.jpg">
+                </div>
+                <div class="column">
+                    <img src="images/casey.jpg">
+                    <img src="images/DSC01753.jpg">
+                    <img src="images/ossington.jpg">
+                    <img src="images/20170805_191657_HDR.jpg">
+                    <img src="images/20170806_200908_HDR.jpg">
+
+                </div>
+                <div class="column">
+                    <img src="images/20170816_104417%20(1).jpg">
+                    <img src="images/pinksun.jpg">
+                    <img src="images/roof.jpg">
+                                        <img src="images/20170803_203012.jpg">
+
+                 
+
+
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="ContentBlock">
+            <h5> Who I am. </h5>
+        `   
+            <p> I dabble in almost every digital realm you can imagine. From proggramming to audio production, with stops at game development and 3D Modeling in between, I have had an intrest in computers since I was seven years old. Over the cource of my life since then, I have a verity of diffrent art pieces to display. On this page I will be showcasing my photography from the past few years, an art form I have recently found an intrest in. Above I have some of my favorites on display. I hope you enjoy. </p>
+        </div>    
+            
+        
+        <div class="ColoredBlock"> 
+            <div><h6> What I do. </h6></div>
+            <!--- I put in this paragraph just to explain what's happeneing with the calculation underneath... it's all fake -->
+            <p style="color: white"> I take photo requests, as well as sell stock content. I only charge ten bucks for each photo I sell. But there's a twist! I also charge a start up fee of forty dollers upon signing up as a customer. This means that if you're looking for a single photo, that'll run you 50 bucks flat. However, if you're looking to purchase more than one photo, your cost formula would like this C(x)=10x+40. Use the built in tool below to calculate how much it would cost to buy a specifc amount of photos!</p>
+            
+        
+        </div>
+        
+         <!--- Javascript part -->
+        <div class="Calculator">
+                
+            <h5> Let's try calculating a price </h5>
+            
+            <form onSubmit="return false">
+            <br>
+            <input type="text" name="photos" value="How many photos would you like?" onfocus="value = ''" id="PhotoInput" onchange="updateInput(this.value)" autocomplete="off">  
+            <br>
+            </form>
+            <h4 class="Iwant"> I want </h4>
+            <h4 class="photos"> photos.</h4>
+            <img src="images/4x/Asset%202Corner%20Pieces.png">
+                
+            <h1> You would pay </h1>
+                
+            <h8 id="OutputNumber"> 0$ </h8>   
+        
+        
+            </div>
+        
+       
+    </body>
+    <footer>
+        
+        <hr>
+         
+        <p class="Copyright"> All copyright privillages belong to Shiloh Light-Barnes</p>
+    </footer>
+     <script src="week2javascript.js"></script>
+    
+</html>

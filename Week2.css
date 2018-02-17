@@ -1,0 +1,353 @@
+
+/*I didnt expect to have to add webkit transitions on every item that animates */
+
+/* I refrenced webkit-transition code from 
+https://www.w3schools.com/css/css3_transitions.asp
+*/
+
+body, h1, h3, h5, h6, h7 {
+    
+    
+    margin: 0;
+    padding 0;
+    
+   
+    -webkit-transition: all .50s ease-in-out;
+    -webkit-transition: all .50s ease-in-out;
+    -moz-transition:all .50s ease-in-out;
+    
+}
+
+
+/* Navagation buttons at the top of the site */
+.NavBtn {
+    margin-top: 100px;
+    display: inline;
+  
+    color: #ACCFE7;
+    font-family: Asap, sans-serif;
+    font-weight: 800;
+    font-size: 1.7em;
+    
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+        text-align: right;
+
+    -webkit-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition:all .25s ease-in-out;
+}
+
+.NavBtn:hover{
+    background: #F9D8D8;
+    color: white;
+    
+    -webkit-border-radius: 0px 5px 5px 5px;
+    -moz-border-radius: 0px 5px 5px 5px;
+    border-radius: 0px 5px 5px 5px;
+    
+    -webkit-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition:all .25s ease-in-out;
+    
+    cursor: default;
+}
+
+
+.BtnHolder {
+    position: absolute;
+    top: 144px;
+    left: 50%;
+    margin-left: -355px;
+}
+
+h1{
+    text-align: center;
+    font-family: Heebo, sans-serif;
+    font-weight: 800;
+    font-size: 2em;
+    color: #474747;
+    
+    padding-top: 10px;
+}
+
+h6 {
+     text-align: center;
+    font-family: Heebo, sans-serif;
+    font-weight: 800;
+    font-size: 3em;
+    color: #ffffff;
+    
+    padding-top: 10px;
+}
+
+h7 {
+     text-align: center;
+    font-family: Heebo, sans-serif;
+    font-weight: 800;
+    font-size: 3em;
+    color: #ffffff;
+    
+    padding-top: 10px;
+}
+
+h5 {
+    text-align: center;
+    font-family: Heebo, sans-serif;
+    font-weight: 800;
+    font-size: 3em;
+    color: #474747;
+    
+    padding-top: 30px;
+}
+
+h8 {
+    font-family: Heebo, sans-serif;
+    font-weight: 800;
+    font-size: 4em;
+    color: #F9D8D8;
+    
+    padding-top: 10px;
+}
+
+h5:hover, h6:hover{
+    color: #ACCFE7;
+    -webkit-transition: all .50s ease-in-out;
+    -webkit-transition: all .50s ease-in-out;
+    -moz-transition:all .50s ease-in-out;
+}
+
+h3 {
+    color:darksalmon;
+    text-align: center;
+    padding-top: 40px;
+    font-family: "Titillium Web"
+}
+
+h2 {
+    
+    position: absolute;
+    top 8px;
+    left: 16px;
+    width: 100%;
+}
+
+body {
+    
+    
+    font-family: "Helvetica Neue", "Helvetica", "Arial";
+    background-color: #f8f8f8;
+    
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+    display: inline;
+}
+
+.customworks {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition: all .75s ease-in-out;
+    -webkit-transition: all .75s ease-in-out;
+    -moz-transition:all .75s ease-in-out;
+    
+}
+.customworks:hover {
+    opacity: .75%;
+    margin-right: 60%;
+    background-size: 60%;
+    -webkit-transition: all .75s ease-in-out;
+    -webkit-transition: all .75s ease-in-out;
+    -moz-transition:all .75s ease-in-out;
+    
+}
+.topimage {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    
+    padding-bottom: 200px;
+}
+
+
+.MainTitle {
+    /* This text must be above the top image */
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #474747;
+    
+    /* These two lines below taken from stack overflow answer
+    
+    --> https://stackoverflow.com/questions/572298/css-how-to-stop-text-from-taking-up-more-than-1-line
+    */
+    
+    white-space: nowrap;
+    overflow: hidden;
+
+    text-overflow: clip;
+    font-family: Heebo, sans-serif;
+    font-weight: 600;
+    font-size: 320%;
+    
+    -webkit-transition: all .75s ease-in-out;
+    -webkit-transition: all .75s ease-in-out;
+    -moz-transition:all .75s ease-in-out;
+}
+.MainTitle:hover{
+    color: #F9D8D8;
+    
+    -webkit-transition: all .75s ease-in-out;
+    -webkit-transition: all .75s ease-in-out;
+    -moz-transition:all .75s ease-in-out;
+}
+
+ /* 
+                This is the container for all of the images 
+                Code was refrenced from w3 Schools 
+
+                https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp
+        
+*/
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0 4px;
+    
+}
+
+.column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+.column img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    
+     -webkit-transition: all .75s ease-in-out;
+    -webkit-transition: all .75s ease-in-out;
+    -moz-transition:all .75s ease-in-out;
+}
+
+.column img:hover {
+    
+    width: 100%;
+    opacity: .75;
+
+     -webkit-transition: all .75s ease-in-out;
+    -webkit-transition: all .75s ease-in-out;
+    -moz-transition:all .75s ease-in-out;
+}
+
+@media (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+        padding: 0 4px;
+    }
+
+}
+@media (max-width: 600px) {
+    
+    .column {
+        
+        flex: 50%;
+        max-width: 50%;
+        padding: 0 4px;
+    }
+}
+
+.container {
+    height: 400px;
+    overflow: scroll
+}
+
+p {
+    font-family: Heebo, sans-serif;
+    font-weight: 800;
+    font-size: 1em;
+    color: #898989;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-decoration: none;
+    
+    text-align: center;
+}
+
+
+.ColoredBlock {
+    height: 250px;
+    background:    #F9D8D8;
+    margin-top: 60px;
+}
+
+input {
+    position: absolute;
+    left: 50%;
+    margin-top: 20px;
+    width: 300px;
+    height: 60px;
+    margin-left: -150px;
+    color: darkgray;
+    outline: none;
+    border-radius: 100px;
+    border: none;
+    text-align: center;
+    font-family: Heebo, sans-serif;
+    font-weight: 800;
+    font-size: 1em;
+}
+input:focus, select:focus, textarea:focus, button:focus{
+    outline: none;
+    
+}
+
+.Calculator img {
+    width: 100px%;
+    height: 100px;
+    padding-top: 75px;
+    display: block;
+    margin: auto;
+    
+}
+
+.Copyright {
+    font-size: 10px;
+}
+
+hr {
+    width: 80%;
+}
+
+h4 {
+    font-family: Heebo, sans-serif;
+    color: darkgray;
+    display: inline;
+        position: absolute;
+        left: 50%;
+    
+}
+
+.Iwant {
+        
+        margin-left: -210px;
+}
+
+.photos {
+        
+        margin-left: 170px;
+}
+
+
+
+.Calculator {
+    text-align: center;
+}
